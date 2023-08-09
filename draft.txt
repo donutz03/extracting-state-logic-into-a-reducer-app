@@ -169,3 +169,12 @@ export default function tasksReducer(tasks, action) {
 
 //index.html
 <pre id="output"></pre>
+
+import { useReducer } from 'react';
+
+const [tasks, setTasks] = useState(initialTasks);
+
+const [tasks, dispatch] = useReducer(tasksReducer, initalTasks);
+
+//App.js
+import { useReducer } from 'react'
